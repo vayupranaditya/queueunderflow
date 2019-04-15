@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Queueunderflow</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!--vvtambahanvv-->
+	<link rel="stylesheet" type="text/css" href="footer.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<!--^^^^-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+	<footer id="footer" class="site-footer">
+        <div class="site-footer--container">
+                <div class="site-footer--logo">
+                    <a href="https://stackoverflow.com"><img class="ikon" src="android-chrome-192x192.png" width="32" height="37" aria-hidden="true"></a>
+                </div>
+            <nav class="site-footer--nav">
+           		<div class="site-footer--col">
+                    <h5 class="-title"><a href="https://stackoverflow.com">Stack Overflow</a></h5>
+                    <ul class="-list">
+                        <li class="-item"><a href="" class="-link">Questions</a></li>
+                        <li class="-item"><a href="" class="-link">Jobs</a></li>
+                        <li class="-item"><a href="" class="-link">Developer Jobs Directory</a></li>
+                        <li class="-item"><a href="" class="-link">Salary Calculator</a></li>
+                        <li class="-item"><a href="" class="-link">Help</a></li>
+                    </ul>
+                            <!-- karena ga make mobile view jd gw tutup -->
+                            <!-- <li class="-item"><a href="" class="-link">Mobile</a></li>
+                        	<li class="-item"><a href="" class="-link">Disable Responsiveness</a></li></ul> -->
+                </div>
+                <div class="site-footer--col">
+                    <h5 class="-title"><a href="https://stackoverflow.com">Products</a></h5>
+                    <ul class="-list">
+                        <li class="-item"><a href="" class="-link">Teams</a></li>
+                        <li class="-item"><a href="" class="-link">Talent</a></li>
+                        <li class="-item"><a href="" class="-link">Advertising</a></li>
+                        <li class="-item"><a href="" class="-link">Enterprise</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer--col">
+                    <h5 class="-title"><a href="https://stackoverflow.com">Company</a></h5>
+                    <ul class="-list">
+                        <li class="-item"><a href="" class="-link">About</a></li>
+                        <li class="-item"><a href="" class="-link">Press</a></li>
+                        <li class="-item"><a href="" class="-link">Work Here</a></li>
+                        <li class="-item"><a href="" class="-link">Legal</a></li>
+                        <li class="-item"><a href="" class="-link">Privacy Policy</a></li>
+                        <li class="-item"><a href="" class="-link">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer--col">
+                    <h5 class="-title"><a href="https://stackoverflow.com">Stack Exchange<br>Network</a></h5>
+                    <ul class="-list">
+                        <li class="-item"><a href="" class="-link">Technology <i class="fa fa-chevron-circle-right fa-xs"></i></a></li>
+                        <li class="-item"><a href="" class="-link">Life / Arts <i class="fa fa-chevron-circle-right fa-xs"></i></a></li>
+                        <li class="-item"><a href="" class="-link">Culture / Recreation <i class="fa fa-chevron-circle-right fa-xs"></i></a></li>
+                        <li class="-item"><a href="" class="-link">Science <i class="fa fa-chevron-circle-right fa-xs"></i></a></li>
+                        <li class="-item"><a href="" class="-link">Other <i class="fa fa-chevron-circle-right fa-xs"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="site-footer--copyright fs-fine">
+                <ul class="-list">
+                    <li class="-item"><a class="js-gps-track -link" href="">Blog</a></li>
+                    <li class="-item"><a href="https://www.facebook.com/officialstackoverflow/" class="-link">Facebook</a></li>
+                    <li class="-item"><a href="https://twitter.com/stackoverflow" class="-link">Twitter</a></li>
+                    <li class="-item"><a href="https://linkedin.com/company/stack-overflow" class="-link">LinkedIn</a></li>
+                </ul>
+                <p class="mt-auto mb24">site design / logo © 2019 Stack Exchange Inc; user contributions licensed under
+                	<a href="" rel="license">cc by-sa 3.0 </a>with
+                	<a href="" rel="license">attribution required</a>.<br>
+                    rev&nbsp;2019.4.12.33321
+                </p>
+            </div>
+        </div>
+        </footer>
+</body>
+</html>
