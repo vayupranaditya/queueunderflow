@@ -47,7 +47,7 @@
 	      	<input type="text" class="form-control" id="password">
           
 	    </div>
-	    <button onclick="hitungPythagoras_1301174330()" class="btn btn-primary">Log in</button>
+	    <button class="btn btn-primary">Log in</button>
 	</form>
 </body>
 </html>
