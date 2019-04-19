@@ -6,26 +6,18 @@ html, body {
 }
 /**/
 .site-footer{
-	background-color: #242729;
-    background-image: none;
+    background-color: #242729;
     background-position: top left;
     background-repeat: no-repeat;
     border-top: 0;
     background-size: auto;
     color: #6a737c;
-    padding-top: 0;
-    padding-bottom: 0;
     box-sizing: border-box;
-    height: 272px;
-    display: block;
 }
 
 /*cont*/
 .site-footer--container{
-	width: 100%;
-    margin: 0 auto;
     padding: 32px 12px 12px 12px;
-    display: flex;
     flex-flow: row wrap;
 }
 .site-footer--container, .site-footer--extra {
@@ -40,16 +32,13 @@ html, body {
 
 /*nav/main link*/
 .site-footer--nav {
-    display: flex;
     flex: 2 1 auto;
-    flex-wrap: wrap;
 }
 
 /*column*/
 .site-footer--col {
     padding: 0 12px 24px 0;
     flex: 1 0 auto;
-    display: block;
 }
 
 /*columnheader*/
@@ -58,14 +47,13 @@ html, body {
     font-weight: bold;
     margin-bottom: 12px;
     line-height: 1.30769231;
-    max-width: 230px;
 }
 .site-footer .-title a{
-	color: #bbc0c4;
-	text-decoration: none;
+    color: #bbc0c4;
+    text-decoration: none;
 }
 .site-footer .-title a:hover{
-	color: white;
+    color: white;
 }
 
 /*columnlist*/
@@ -76,51 +64,28 @@ html, body {
 
 /*columnitem*/
 .site-footer .-item{
-    padding-bottom: 0;
+    margin-bottom: 5px
 }
 .site-footer .-link{
     color: #848d95;
-    padding: 4px 0;
     line-height: 1.30769231;
-    display: inline-block;
     text-decoration: none;
 }
 .site-footer .-link:hover{
-	color: #bbc0c4;
+    color: #bbc0c4;
 }
 
 /*columncopyright*/
 .site-footer--copyright {
     flex: 1 1 150px;
-    display: flex;
-    flex-direction: column;
     font-size: 11px
 }
 
-.site-footer--copyright ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
 .site-footer--copyright .-link {
-    color: #848d95;
-    padding: 4px 0;
-    line-height: 1.30769231;
-    display: inline-block;
-    text-decoration: none;
     margin-right: 10px
 }
 
-.mb24 {
-    margin-bottom: 24px !important;
-}
-
-.mt-auto {
-    margin-top: auto !important;
-}
-.mb24 a{
-	color: #848d95;
-	text-decoration: none;
+.mb-5 a{
+    color: #848d95;
+    text-decoration: none;
 }
