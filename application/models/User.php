@@ -26,7 +26,7 @@ class User extends CI_Model {
 	
 	public function getDetail($username) {
 		return $this->db
-				->select('username', 'email', 'reputation')
+				->select('username, email, reputation')
 				->from('user')
 				->where('username', $username)
 				->get()

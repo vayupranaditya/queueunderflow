@@ -52,3 +52,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+// custom made
+$route['data/user'] = 'UserController/indexJson';
+$route['data/user/(:any)'] = 'UserController/getJson/$1';
+$route['data/user/(:any)/detail'] = 'UserController/getDetailJson/$1';
