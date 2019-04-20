@@ -57,3 +57,6 @@ $route['translate_uri_dashes'] = FALSE;
 $route['data/user'] = 'UserController/indexJson';
 $route['data/user/(:any)'] = 'UserController/getJson/$1';
 $route['data/user/(:any)/detail'] = 'UserController/getDetailJson/$1';
+
+$route['data/question'] = 'QuestionController/indexJson';
+$route['data/question/(:any)'] = 'QuestionController/getJson/$1';
