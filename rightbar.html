@@ -1,99 +1,75 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Queueunderflow</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!--vvtambahanvv-->
-    <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <!--^^^^-->
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-</head>
-<body>
-    <!-- rightbar -->
-    <div id="rightbar">
-        
-    </div>
+        <div id="rightbar">
+            <div class="module--cont">
+                <div class="module">
+                    <div class="module-title">
+                        FEATURED ON META
+                    </div>
+                    <hr>
+                    <div class="module-item">
+                        <div class="module-item-type"><a href=""><i class="far fa-comment-alt"></i></a></div>
+                        <div class="module-item-content"><a href="">Announcing the arrival of Valued Associate #679: Cesar Manara</a></div>
+                    </div>
+                    <div class="module-item">
+                        <div class="module-item-type"><a href=""><i class="far fa-comment-alt"></i></a></div>
+                        <div class="module-item-content"><a href="">Planned maintenance scheduled April 23, 2019 at 23:30 UTC (7:30pm US/Eastern)</a></div>
+                    </div>
+                    <div class="module-item">
+                        <div class="module-item-type"><a href="" style="color: #6a737c;"><i class="fab fa-stack-overflow"></i></a></div>
+                        <div class="module-item-content"><a href="">Data science time! April 2019 and salary with experience</a></div>
+                    </div>
+                    <div class="module-item">
+                        <div class="module-item-type"><a href="" style="color: #6a737c;"><i class="fab fa-stack-overflow"></i></a></div>
+                        <div class="module-item-content"><a href="">The Ask Question Wizard is Live!</a></div>
+                    </div>
 
+                    <!-- batas -->
 
-
-<!-- footer -->
-    <footer id="footer" class="site-footer d-block py-0">
-        <div class="site-footer--container d-flex mx-auto my-0">
-            <div class="site-footer--logo">
-                <a href="https://stackoverflow.com"><img class="ikon" src="android-chrome-192x192.png" width="32" height="37" aria-hidden="true"></a>
+                    <div class="module-title">
+                        HOT META POST
+                    </div>
+                    <hr>
+                    <div class="module-item">
+                        <div class="module-item-type"><a href="" style="color: #6a737c;">34</a></div>
+                        <div class="module-item-content"><a href="">Where is SO's (or SE's?) policy on English Only?</a></div>
+                    </div>
+                    <div class="module-item">
+                        <div class="module-item-type"><a href="" style="color: #6a737c;">10</a></div>
+                        <div class="module-item-content"><a href="">Should links to Stack Exchange be considered as spam?</a></div>
+                    </div>
+                </div>
             </div>
-            <nav class="site-footer--nav d-flex flex-wrap">
-                <div class="site-footer--col d-block">
-                    <h5 class="-title"><a href="https://stackoverflow.com">Stack Overflow</a></h5>
-                    <ul class="-list">
-                        <li class="-item"><a href="" class="-link d-inline">Questions</a></li>
-                        <li class="-item"><a href="" class="-link d-inline">Jobs</a></li>
-                        <li class="-item"><a href="" class="-link d-inline">Developer Jobs Directory</a></li>
-                        <li class="-item"><a href="" class="-link d-inline">Salary Calculator</a></li>
-                        <li class="-item"><a href="" class="-link d-inline">Help</a></li>
-                    </ul>
-                            <!-- karena ga make mobile view jd gw tutup -->
-                            <!-- <li class="-item"><a href="" class="-link d-inline">Mobile</a></li>
-                            <li class="-item"><a href="" class="-link d-inline">Disable Responsiveness</a></li></ul> -->
+            <div class="watch-tag--cont">
+                <div class="watch-tag">
+                    <div class="watch-tag-header d-flex">
+                        <span class="icon-eye"><i class="fas fa-eye"></i></span>
+                        <span class="flex-grow-1">Watched Tags</span>
+                    </div>
+                    <div class="watch-tag-content d-flex">
+                        <div class="tags">
+                            
+                        </div>
+                        <div class="search-image text-center align-items-center">
+                            <img class="mx-0 tag-cell" src="assets/images/ico-binoculars.svg">
+                            <p class="w100 tag-cell">Watch tags to curate your list of questions.</p>
+                            <a class="">
+                                <button class="btn tag-cell btn-fill">
+                                    <i class="fas fa-eye"></i>
+                                    Watch a tag
+                                </button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="site-footer--col d-block">
-                    <h5 class="-title"><a href="https://stackoverflow.com">Products</a></h5>
-                    <ul class="-list">
-                        <li class="-item"><a href="" class="-link d-inline">Teams</a></li>
-                        <li class="-item"><a href="" class="-link d-inline">Talent</a></li>
-                        <li class="-item"><a href="" class="-link d-inline">Advertising</a></li>
-                        <li class="-item"><a href="" class="-link d-inline">Enterprise</a></li>
-                    </ul>
+            </div>
+            <div class="watch-tag--cont">
+                <div class="watch-tag">
+                    <div class="watch-tag-header d-flex">
+                        <span class="icon-eye"><i class="fas fa-ban"></i></span>
+                        <span class="flex-grow-1">Ignored Tags</span>
+                    </div>
+                    <div class="watch-tag-content d-flex">
+                        <a class="">Add an ignored tag</a>
+                    </div>
                 </div>
-                <div class="site-footer--col d-block">
-                    <h5 class="-title"><a href="https://stackoverflow.com">Company</a></h5>
-                    <ul class="-list">
-                        <li class="-item"><a href="" class="-link d-inline">About</a></li>
-                        <li class="-item"><a href="" class="-link d-inline">Press</a></li>
-                        <li class="-item"><a href="" class="-link d-inline">Work Here</a></li>
-                        <li class="-item"><a href="" class="-link d-inline">Legal</a></li>
-                        <li class="-item"><a href="" class="-link d-inline">Privacy Policy</a></li>
-                        <li class="-item"><a href="" class="-link d-inline">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="site-footer--col d-block">
-                    <h5 class="-title"><a href="https://stackoverflow.com">Stack Exchange<br>Network</a></h5>
-                    <ul class="-list">
-                        <li class="-item"><a href="" class="-link d-inline">Technology <i class="fa fa-chevron-circle-right fa-xs"></i></a></li>
-                        <li class="-item"><a href="" class="-link d-inline">Life / Arts <i class="fa fa-chevron-circle-right fa-xs"></i></a></li>
-                        <li class="-item"><a href="" class="-link d-inline">Culture / Recreation <i class="fa fa-chevron-circle-right fa-xs"></i></a></li>
-                        <li class="-item"><a href="" class="-link d-inline">Science <i class="fa fa-chevron-circle-right fa-xs"></i></a></li>
-                        <li class="-item"><a href="" class="-link d-inline">Other <i class="fa fa-chevron-circle-right fa-xs"></i></a></li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="site-footer--copyright d-flex flex-column">
-                <ul class="-list m-0 p-0 d-flex list-unstyled">
-                    <li class="-item"><a class="-link d-inline" href="">Blog</a></li>
-                    <li class="-item"><a href="https://www.facebook.com/officialstackoverflow/" class="-link d-inline">Facebook</a></li>
-                    <li class="-item"><a href="https://twitter.com/stackoverflow" class="-link d-inline">Twitter</a></li>
-                    <li class="-item"><a href="https://linkedin.com/company/stack-overflow" class="-link d-inline">LinkedIn</a></li>
-                </ul>
-                <p class="mt-auto mb-5">site design / logo © 2019 Stack Exchange Inc; user contributions licensed under
-                    <a href="" rel="license">cc by-sa 3.0 </a>with
-                    <a href="" rel="license">attribution required</a>.<br>
-                    rev&nbsp;2019.4.12.33321
-                </p>
             </div>
         </div>
-    </footer>
-</body>
-</html>
