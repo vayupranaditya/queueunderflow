@@ -34,8 +34,9 @@ class User extends CI_Model {
 	}
 	
 	public function update($username, $data) {
-		return $this->db
-				->update('user', $data, ['username' => $username]);
+		$this->db
+			->update('user', $data, ['username' => $username]);
+		return $this->db->affected_rows() > 0;
 	}
 
 	// public function delete($username) {

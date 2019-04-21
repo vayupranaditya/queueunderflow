@@ -2,6 +2,11 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Question extends CI_Model {
+
+	public function create($data) {
+		return $this->db->insert('question', $data);
+	}
+	
 	public function index() {
 		return $this->db
 					->select('user_id, title, created_at')

@@ -54,9 +54,10 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 // custom made
-$route['data/user'] = 'UserController/indexJson';
-$route['data/user/(:any)'] = 'UserController/getJson/$1';
-$route['data/user/(:any)/detail'] = 'UserController/getDetailJson/$1';
+$route['data/user']['get'] = 'UserController/indexJson';
+$route['data/user/(:any)']['get'] = 'UserController/getJson/$1';
+$route['data/user/(:any)/detail']['get'] = 'UserController/getDetailJson/$1';
 
-$route['data/question'] = 'QuestionController/indexJson';
-$route['data/question/(:any)'] = 'QuestionController/getJson/$1';
+$route['data/ask']['post'] = 'QuestionController/create';
+$route['data/question']['get'] = 'QuestionController/indexJson';
+$route['data/question/(:any)']['get'] = 'QuestionController/getJson/$1';
