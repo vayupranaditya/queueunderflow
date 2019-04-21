@@ -13,7 +13,9 @@ class QuestionController extends CI_Controller {
 
 	public function getJson($id) {
 		$data = $this->Question->get($id);
-		$data['tags'] = $this->Question->getTag($id);
+		if ($data === []) {
+			$data['tags'] = $this->Question->getTag($id);
+		}
 		print_r(json_encode($data));
 	}
 
