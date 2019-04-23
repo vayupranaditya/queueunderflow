@@ -1,0 +1,90 @@
+<div class="container mx-4 my-1">
+    <div class="row py-3 border-bottom">
+        <div class="col-md-11 mx-0 px-0">
+            <h3>Lorem Ipsum Dolor Sit Amet, Constectur Esplicit Dilit</h3>
+        </div>
+        <div class="col-md-1">
+        </div>
+    </div>
+    <div class="row py-3 border-bottom">
+        <div class="col-md-1" style="margin-left: -30px">
+            <div class="col-md-8">
+            <i class="fas fa-caret-up fa-3x grey-hoverable my-0"></i>
+            <h4 class="my-0 py-0 text-secondary mx-1">&nbsp0</h4>
+            <i class="fas fa-caret-down fa-3x grey-hoverable"></i>
+            <i class="fas fa-star ml-1 grey-hoverable"></i>
+        </div>
+        </div>
+        <div class="col-md-11">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>A websocket client (using Autobahn/Python and Twisted) needs to connect to a websocket server: the client needs to present its client certificate to the server and the client needs to check the server's certificate. These certificates have been created, for instance, during setup of a Kubernetes minikube installation. In particular:</p>
+
+                    <ul>
+                    <li>server certificate <code>~/.minikube/ca.crt</code> (in X509 format from what I understand).</li>
+                    <li>client certificate <code>~/.minikube/client.crt</code> with key <code>~/.minikube/client.key</code>.</li>
+                    </ul>
+
+                    <p>I've checked that I can successfully use these certificates+key to issue Kubernetes remote API calls using <code>curl</code>.</p>
+
+                    <p>From Autobahn's <a href="https://github.com/crossbario/autobahn-python/blob/master/examples/twisted/websocket/echo_tls/client.py" rel="nofollow noreferrer">echo_tls/client.py</a> example I understand that I may need to use a <code>ssl.ClientContextFactory()</code>. <code>ssl</code> here refers to the <code>pyopenssl</code> package that twisted automatically imports.</p>
+
+                    <p>However, I cannot figure out how to pass the certificates to the factory?</p>
+
+                    <ul>
+                    <li>How do I tell the websocket factor to present the client certificate to the server?</li>
+                    <li>How do I tell the websocket to check the server's certificate in order to detect MITM attacks?</li>
+                    </ul>
+                    <span class="badge blue-tag">python-3.x</span>
+                    <span class="badge blue-tag">ssl</span>
+                    <span class="badge blue-tag">websocket</span>
+                    <span class="badge blue-tag">ssl-socket</span>
+                    <span class="badge blue-tag">autobahn</span>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-md-9">
+                    <small>
+                        <a href="#" class="text-secondary no-decoration">share</a>
+                        <a href="#" class="text-secondary no-decoration">edit</a>
+                    </small>
+                </div>
+                <div class="col-md-3 owner-card blue-tag px-2">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <small>asked Sep 9 '10 at 8:58</small>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1 mx-auto py-2">
+                            <i class="fa fa-user fa-lg align-middle" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-md-9 mx-0 px-0">
+                            <small>
+                                <div class="row pt-1 my-0">
+                                    <div class="col-md-12">
+                                        <a class="text-primary">Vayupranaditya</a>
+                                    </div>
+                                </div>
+                                <div class="row py-0">
+                                    <div class="col-md-12">
+                                        <b class="float-left">228&nbsp&nbsp</b>
+                                        <div class="dot bg-secondary float-left my-1">&nbsp</div>
+                                        <span class="float-left">&nbsp18 &nbsp</span>
+                                        <div class="dot bg-gold float-left my-1">&nbsp</div>
+                                        <span class="float-left">&nbsp150 &nbsp</span>
+                                    </div>
+                                </div>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-md-12 my-3">
+                    <small class="grey">add a comment</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

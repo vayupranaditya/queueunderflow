@@ -1,8 +1,10 @@
 html, body {
     font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
-    font-size: 12px;
     line-height: 1.26666667;
     color: #242729;
+}
+.font-12 {
+    font-size: 12px;
 }
 /**/
 .site-footer{
