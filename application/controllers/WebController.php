@@ -24,6 +24,27 @@ class WebController extends CI_Controller {
 		$this->load->view('body', $data);
 	}
 
+	public function search() {
+		$data['center'] = 'home';
+		$data['title'] = 'Queue Underflow - Where Developers Learn, Share, & Build Careers';
+		$data['left'] = true;
+		$data['leftActive'] = 'home';
+		$data['right'] = true;
+
+		if (isset($_GET['q'])) {
+			$q = $this->Question->search($this->input->get('q'));
+			if ($q !== []) {
+				$data['questions'] = $q;
+				$data['state'] = 'search';
+				$this->load->view('body', $data);
+			} else {
+				redirect(base_url());
+			}
+		} else {
+			redirect(base_url());
+		}
+	}
+
 	public function login() {
 		if (!$this->session->has_userdata('logged')) {
 			$data['center'] = 'V_login';
@@ -69,9 +90,5 @@ class WebController extends CI_Controller {
 			$data['status'] = '404';
 		}
 		$this->load->view('body', $data);
-	}
-
-	public function search() {
-		echo $this->input->get('q');
 	}
 }

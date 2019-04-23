@@ -14,6 +14,16 @@ class Question extends CI_Model {
 					->get()
 					->result_array();
 	}
+
+	public function search($title) {
+		return $this->db
+					->select('id, user_id, title, created_at')
+					->from('question')
+					->like('title', $title)
+					->get()
+					->result_array();
+	}
+
 	public function get($id) {
 		$select = <<<EOT
 user_id, 

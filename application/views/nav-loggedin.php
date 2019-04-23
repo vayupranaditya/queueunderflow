@@ -9,8 +9,8 @@
           </a>
         </div>
         <div class="nav-search float-right mt-2">
-          <form target="a.hm">
-            <input type="text" class="form-control form-control-sm" id="search-input" placeholder="Search...">
+          <form method="GET" action="<?=base_url()?>search">
+            <input type="text" class="form-control form-control-sm" id="search-input" placeholder="Search..." name="q">
             <input type="submit" name="" hidden="">
           </form>
         </div>

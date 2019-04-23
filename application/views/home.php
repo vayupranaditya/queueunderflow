@@ -3,7 +3,11 @@
         <div id="mainbar" class="main">
             <div class="d-flex">
                 <h1 class="d-flex mr-auto mb-4 top-question px-4 mt-4 h2">
-                    Top Questions
+                    <?php if(isset($state) && $state === 'search'):?>
+                        Search Results
+                    <?php else:?>
+                        Top Questions
+                    <?php endif?>
                 </h1>
                 <div class="d-inline-flex mb-4 mt-4" role="navigation" aria-label="ask new question">
                     <a href="" class="btn btn-primary text-center all-text" >
