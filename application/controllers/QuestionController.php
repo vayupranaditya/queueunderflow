@@ -19,6 +19,19 @@ class QuestionController extends CI_Controller {
 		print_r(json_encode($data));
 	}
 
+	public function search($id) {
+		$question = $this->Question->get($id);
+		if ($question !== '') {
+			$data['title'] = $question['title'];
+			$data['content'] = $question['content'];
+			$data['createdAt'] = $question['created_at'];
+			$data['updatedAt'] = $question['updatedAt_at'];
+			return $data;
+		} else {
+			return '';
+		}
+	}
+
 	public function create() {
 		$this->form_validation->set_rules('username', 'Username', 'required|max_length[20]|alpha_dash');
 		$this->form_validation->set_rules('title', 'Title', 'required|max_length[100]');
@@ -26,12 +39,11 @@ class QuestionController extends CI_Controller {
 
 		if ($this->form_validation->run()) {
 			$data = [];
-			$data['user_id'] = $this->input->post('username');
+			$data['username'] = $this->input->post('username');
 			$data['title'] = $this->input->post('title');
 			$data['content'] = $this->input->post('content');
 			$data['created_at'] = date('Y-m-d H:i:s');
-			$oper = $this->Question->create($data);
-			print_r($oper);
+			echo json_encode($this->Question->create($data));
 		}
 	}
 }

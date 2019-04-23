@@ -9,7 +9,7 @@ class Question extends CI_Model {
 	
 	public function index() {
 		return $this->db
-					->select('user_id, title, created_at')
+					->select('id, user_id, title, created_at')
 					->from('question')
 					->get()
 					->result_array();
