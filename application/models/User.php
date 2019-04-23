@@ -3,7 +3,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class User extends CI_Model {
 	public function create($data) {
-		return $this->insert('user', $data);
+		$data['password'] = md5($data['password']);
+		return $this->db
+					->insert('user', $data);
+	}
+
+	public function auth($email, $pwd) {
+		return $this->db
+					->select('username')
+					->from('user')
+					->where('email', $email)
+					->where('password', md5($pwd))
+					->get()
+					->result_array();
 	}
 
 	public function index() {
@@ -13,6 +25,15 @@ class User extends CI_Model {
 				->order_by('reputation', 'DESC')
 				->get()
 				->result_array();
+	}
+
+	public function checkAvailibility($email) {
+		$this->db
+			->select('username')
+			->from('user')
+			->where('username', $username)
+			->get();
+		return $this->db->affected_rows() > 0;
 	}
 	
 	public function get($username) {
@@ -34,8 +55,9 @@ class User extends CI_Model {
 	}
 	
 	public function update($username, $data) {
-		return $this->db
-				->update('user', $data, ['username' => $username]);
+		$this->db
+			->update('user', $data, ['username' => $username]);
+		return $this->db->affected_rows() > 0;
 	}
 
 	// public function delete($username) {

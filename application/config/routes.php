@@ -49,11 +49,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'welcome';
+$route['default_controller'] = 'WebController';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 // custom made
-$route['data/user'] = 'UserController/indexJson';
-$route['data/user/(:any)'] = 'UserController/getJson/$1';
-$route['data/user/(:any)/detail'] = 'UserController/getDetailJson/$1';
+$route['data/user']['get'] = 'UserController/indexJson';
+$route['data/user/(:any)']['get'] = 'UserController/getJson/$1';
+$route['data/user/(:any)/detail']['get'] = 'UserController/getDetailJson/$1';
+
+$route['data/ask']['post'] = 'QuestionController/create';
+$route['data/question']['get'] = 'QuestionController/indexJson';
+$route['data/question/(:any)']['get'] = 'QuestionController/getJson/$1';
+
+
+$route['']['get'] = 'WebController/index';
+$route['login']['get'] = 'WebController/login';
+$route['login']['post'] = 'UserController/login';
+$route['signup']['get'] = 'WebController/signup';
+$route['signup']['post'] = 'UserController/signup';
+$route['logout']['get'] = 'UserController/logout';
+$route['search']['get'] = 'WebController/search';
+$route['question/(:any)/(:any)']['get'] = 'WebController/question/$1/$2';
