@@ -1,0 +1,24 @@
+body {
+  font-family: calibri;
+}
+
+.mainLogin {
+  width: 350px;
+  background: white;
+  padding: 15px;
+  margin: 250px auto;
+  box-shadow: 0px 0px 8px #1234;
+  border-radius: 5px;
+}
+
+button, table, input {
+  width: 100%;
+  } .btn-primary, .btn-primary:hover, .btn-primary:active {
+    background: #0099ff !important;
+    cursor: pointer;
+  } .title {
+    font-size: 26px;
+    margin-bottom: 10px;
+  } label {
+    font-weight: normal;
+  }
