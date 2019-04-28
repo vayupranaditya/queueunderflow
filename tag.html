@@ -1,0 +1,136 @@
+
+    <div class="container mt-0 d-flex w-100 m-0-auto position-relative text-left mw-100">
+        <div class="content mx-auto">
+            <div class="h-100 d-flex justify-content-center align-items-center">
+                <div class="d-flex flex-column wmx6">
+                    <div id="progress--cont" class="mb-5 d-flex justify-content-center flex-wrap tags-link">
+                        <!-- diganti dengan link ask question -->
+                        <button onclick="location.href='askquestion.html'" class="py-2 px-3 mr-1">Type</button>
+                        <!-- ^^^^ -->
+                        <button id="defaultOpen" onclick="openTab(event, 'menutags1')" class="tlink py-2 px-3 mr-1 tags-progress">Tags</button>
+                        <button onclick="openTab(event, 'menutitle')" class="tlink py-2 px-3 mr-1 tags-progress">Title</button>
+                        <button onclick="openTab(event, 'menudesc')" class="tlink py-2 px-3 mr-1 tags-progress">Description</button>
+                        <button onclick="openTab(event, 'menurev')" class="tlink py-2 px-3 mr-1 tags-progress">Review</button>
+                    </div>
+
+                    <div id="menutags1" class="tabcontent">
+                        <h1 class="headline">What languages, technologies, and/or frameworks is your question about?</h1>
+                        <p class="headline-body">Tags help the right people find and answer your question.</p>
+                        <div class="kotak">
+                            <div class="kotak2">
+                                <p class="font-weight-bold mb-4">Identify your tags by completing the sentence, “My question is about…”</p>
+                                <p class="mb-4">For example:</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fas fa-check text-success"></i> Include tags that are crucial to your question only, like <span class="post-tag">c#</span></li>
+                                    <li><i class="fas fa-times text-danger"></i> Only include version numbers, like <span class="post-tag">c#4.0</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column">
+                          <label class="labeltag mb-2">Tags</label>
+                          <div class="position-relative">
+                            <input id="form-tags-1" name="tags-1" type="text">
+                          </div>
+                        </div>
+                        <div class="d-flex mt-4 flex-wrap float-right">
+                            <button onclick="location.href='askquestion.html'" class="m-1 buttonprev">Previous step</button>
+                            <button onclick="openTab(event, 'menutitle')" class="m-1 buttonnext">Next</button>
+                        </div>
+                    </div>
+
+                    <div id="menutitle" class="tabcontent">
+                      <h1 class="headline">What’s your question title?</h1>
+                        <p class="headline-body">Your title helps people quickly understand what your question is about so they can answer it.</p>
+                        <div class="kotak">
+                            <div class="kotak2">
+                                <p class="font-weight-bold mb-4">Imagine you’re asking a question to another developer.</p>
+                                <p class="mb-4">For example:</p>
+                                <ul class="list-unstyled mb-4">
+                                    <li class="mb-2"><i class="fas fa-check text-success"></i> Say “Is there an R function for finding the index of an element in a vector?” </li>
+                                    <li><i class="fas fa-times text-danger"></i> Don’t say “Please help with R” </li>
+                                </ul>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fas fa-check text-success"></i> Say “How to fix ‘Headers already sent’ error in PHP” </li>
+                                    <li><i class="fas fa-times text-danger"></i> Don’t say “PHP error: Why isn’t this working?” </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column">
+                          <label class="labeltag mb-2">Title</label>
+                            <input name="title" type="text" placeholder="What's your programming question? Be specific." maxlength="300" data-min-length="15" data-max-length="150">
+                        </div>
+                        <div class="d-flex mt-4 flex-wrap float-right">
+                            <button onclick="openTab(event, 'menutag')" class="m-1 buttonprev">Previous step</button>
+                            <button onclick="openTab(event, 'menudesc')" class="m-1 buttonnext">Next</button>
+                        </div>
+                    </div>
+
+                    <div id="menudesc" class="tabcontent">
+                      <h1 class="headline">Tell us more about your question</h1>
+                        <p class="headline-body">Your description gives people the information they need to help you answer your question.</p>
+                        <div class="kotak">
+                                <p class="mb-4"><i class="fas fa-question-circle"></i><b>Want more help?</b> Check out these examples of great question descriptions:</p>
+                        </div>
+                        <div class="d-flex flex-column">
+
+                          
+                        </div>
+                        <div class="d-flex mt-4 flex-wrap float-right">
+                            <button onclick="openTab(event, 'menutitle')" class="m-1 buttonprev">Previous step</button>
+                            <button onclick="openTab(event, 'menurev')" class="m-1 buttonnext">Next</button>
+                        </div>
+                    </div>
+
+                    <div id="menurev" class="tabcontent">
+                      <h1 class="headline">Review your question</h1>
+                        <p class="headline-body">Almost there! Let’s give your question one more look. And don’t worry—you can edit your question after it’s posted, too.</p>
+                        <div class="kotak">
+                            <div class="kotak2">
+                                <p class="font-weight-bold mb-4">Check for typos, slang, and code formatting issues.</p>
+                                <p class="mb-4">For example:</p>
+                                <ul class="list-unstyled mb-4">
+                                    <li class="mb-2"><i class="fas fa-check text-success"></i> Format your code: <span class="post-tag">SELECT * FROM Users WHERE Id = 1;</span></li>
+                                    <li><i class="fas fa-times text-danger"></i> Don’t include slang or shorthand: “u can’t bc it returns -1” </li>
+                                </ul>
+                            </div>
+                            <p class="mb-4"><i class="fas fa-question-circle"></i><b>Want more help?</b> Check out these examples of great question descriptions:</p>
+                        </div>
+                        <div class="d-flex flex-column">
+                          <label class="labeltag mb-2">Title</label>
+                            <input name="title" type="text" placeholder="What's your programming question? Be specific." maxlength="300" data-min-length="15" data-max-length="150">
+                        </div>
+                        <div class="d-flex flex-column">
+                          <label class="labeltag mb-2">Tags</label>
+                          <div class="position-relative">
+                            <input id="form-tags-1" name="tags-1" type="text">
+                          </div>
+                        </div>
+                        <div class="d-flex mt-4 flex-wrap float-right">
+                            <button onclick="" class="m-1 buttonnext">Post Your Question</button>
+                        </div>
+                    </div>
+
+                    <script>
+                    function openTab(evt, tagTarget) {
+                      var i, tabcontent, tlink;
+                      tabcontent = document.getElementsByClassName("tabcontent");
+                      for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                      }
+                      tlink = document.getElementsByClassName("tlink");
+                      for (i = 0; i < tlink.length; i++) {
+                        tlink[i].className = tlink[i].className.replace(" tags-active", "");
+                      }
+                      document.getElementById(tagTarget).style.display = "block";
+                      evt.currentTarget.className += " tags-active";
+                    }
+
+                    // Get the element with id="defaultOpen" and click on it
+                    document.getElementById("defaultOpen").click();
+                    </script>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
